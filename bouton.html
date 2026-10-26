@@ -1,0 +1,44 @@
+
+<!--Cesi est un ancien code que j'avais fait en premier-->
+
+<style>
+    body {
+        background: linear-gradient(135deg, #00047c, #e45f00);
+    }
+        #boutonFuyant {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+</style>
+
+<button href="index.html" id="boutonFuyant">Clique ici</button>
+
+<script>
+    const bouton = document.getElementById('boutonFuyant');
+        
+    document.addEventListener('mousemove', (souris) => {
+        const rect = bouton.getBoundingClientRect();
+        const distance = Math.sqrt(
+            Math.pow(souris.clientX - (rect.left + rect.width / 2), 2) +
+            Math.pow(souris.clientY - (rect.top + rect.height / 2), 2)
+        );
+            
+        if (distance < 50) {
+            const newTop = Math.random() * (window.innerHeight - rect.height);
+            const newLeft = Math.random() * (window.innerWidth - rect.width);
+            
+            bouton.style.top = newTop + 'px';
+            bouton.style.left = newLeft + 'px';
+        }
+       });
+
+    bouton.addEventListener('click', (e) => {
+        e.preventDefault(); // Empêche les bugs de liens
+        window.location.href = "index.html"; // Redirige vers la page d'accueil
+    });
+</script>

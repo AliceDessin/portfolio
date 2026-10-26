@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolios</title>
+</head>
+
+<body>
+    <!-- Tout votre HTML doit se trouver après cette ligne -->
+     
+    <!-- ==================================================
+            BANDO
+        ==================================================-->
+    <header>
+        <div class="bando">
+            <img src="Image/petit_dance.gif" id="gif">
+            <h1>Portfolios</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================================================
+                IMAGE D'ACCUEIL
+             ==================================================-->
+        <section class="accueil">
+            <div class="accueil-image">
+                <img src="Image/Grand_image.png" alt="Image principale">
+            </div>
+            
+        </section>
+
+        <!-- ==================================================
+                DESSIN
+             ==================================================-->
+
+        <section class="content-section">
+            <div class="content-block">
+                <div class="Image_selecte_1">
+                    <img src="Image/interpretation_La_Nuit_étoilée.png" id="dessin_digital">
+                </div>
+
+                <div class="text-box">
+                    <h2>Dessin</h2>
+                    <a>------------</a>
+                    <p>je fais des dessins classiques et digitaux et aussi de la peinture</p>
+                    <p2>(mais aussi des petit animation)</p2>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+                    3D
+             ==================================================-->
+
+        <section class="content-section">
+            <div class="content-block reverse">
+                <!-- Cadre pour l'image 2 -->
+                
+                <div class="Image_selecte_2">
+                    <img src="Image/meca_3D.png" id="Image_3D_1">
+                    <img src="Image/image_3D.png" id="Image_3D_2">
+                </div>
+
+                <div class="text-box">
+                    <h2>Modelisation 3D</h2>
+                    <a>------------</a>
+                    <p>Fait des modèles et de petites animations 3D</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ==================================================
+                    FORMULAIRE
+             ==================================================-->
+        <section class="section-contact">
+            <div class="content-block">
+                <h2 class="contact-title mb-2">Contactez-nous</h2>
+
+                <form class="contact-form" action="" novalidate>
+
+                    <input id="nom-input" type="text" placeholder="Nom">
+                    <p class="nom-error hidden">Remplissez le nom</p>
+
+                    <input id="email-input" type="email" placeholder="E-mail">
+                    <p class="email-error hidden">Remplissez l'email</p>
+            
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <p class="message-error hidden">Remplissez le message</p>
+            
+                    <input id="button-submit" type="submit" value="Envoyer">
+                    <p class="form-success hidden">Message bien envoyé !</p>
+
+                    <p class="message-cacher hidden">Il y a un bouton cacher :)</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <a href="bouton.html" class="bouton-invisible">:)</a>
+    <!-- ==================================================
+            PIEND
+        ==================================================-->
+    <footer>
+
+        <div class="deso hidden">
+            <m>Désolée je n'est pas mis de réseau</m>
+        </div>
+
+
+        <div class="footer-container">
+            <a href="#" class="reseau-lien">Youtube</a>
+            <a href="#" class="reseau-lien">Discord</a>
+            <a href="#" class="reseau-lien">Instagram</a>
+            <a href="#" class="reseau-lien">X</a>
+        </div>
+
+    </footer>
+    
+    <!-- Ne rien écrire ni modifier en dessous de cette ligne -->
+    <script src="javascript.js"></script>
+</body>
+</html>
